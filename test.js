@@ -21,7 +21,7 @@ function saveModels(model){
 	});
 }
 
-modeler.init(connection, 'sipclub', saveModels, function(err){
+modeler.init(connection, 'mydb', saveModels, function(err){
 	if (err) console.log("err: ", err);
 	else console.log("done - check your file output directory for schemas");
 })
