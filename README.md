@@ -1,7 +1,10 @@
 # mysqlAutoModels
 Automatically create JSON like model structures - can be easily modified for Sequelize or Waterline
 
+It will generate definitions for most common column types as well as create references for foreign keys (for table joins, relationships, etc...).
+
 Simply include and pass in connection, database, per table callback and final callback.
+
 
 	function saveModels(model){
 		fs.writeFile(modelsPath + model.def.name + ".js", JSON.stringify(model, null, 2), function(err) {
